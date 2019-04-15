@@ -1,16 +1,30 @@
-# animated_bottombar_flutter
+# Animated Bottom NavigationBar Flutter
+Flutter component concept created with [Flutter](https://flutter.dev/) using Dart programming language, inspired by [this](https://br.pinterest.com/pin/862580134860504431/). 
 
-A new Flutter application.
+## About
+This component was created inspired by the GIF at the end of this page. The component is using Animations, Clip Path, Transform and Stream's proprieties to better simulate the inspiration GIF.
 
-## Getting Started
+### The Constructor Data Fields
+````dart
+final Color background; //Background of buttons and navbar
+final Color defaultIconColor; //Default icon color when not actived
+final Color activatedIconColor; //Color of icon when actived
+final Function(int i) onTapButton; //Function when button has clicked
+final Function(int i) onTapButtonHidden; //Fuction when hidden button has clicked
+final List<IconData> buttonsIcons; //Icons to button
+final List<IconData> buttonsHiddenIcons; //Icons to hidden buttons
+final Color backgroundColorMiddleIcon; //Background of middle button
+````
+    
+### The Inspiration
+The GIF below shows the inspiration component.
 
-This project is a starting point for a Flutter application.
+![App Running](./docs/inspiration.gif)
 
-A few resources to get you started if this is your first Flutter project:
+### The App
+The GIF below shows this current component running.
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+![App Running](./docs/app_running.gif)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+#### Notes
+For now, it's working with four buttons and equals hidden buttons length.
